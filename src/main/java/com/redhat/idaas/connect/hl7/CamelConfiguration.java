@@ -141,7 +141,7 @@ public class CamelConfiguration extends RouteBuilder {
           .to("file:src/data-out/hl7v2/ADT?charset=iso-8859-1")
               // Send to Topic
           .convertBodyTo(String.class).to(getKafkaTopicUri("mctn_mms_adt"))
-          //Response to HL7 Message Sent Built by platform
+
     ;
 
     /*
